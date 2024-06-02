@@ -24,23 +24,23 @@
 		<input type="hidden" name="page" value="admin/GestioneCatalogo.jsp"><br><br>
 		<div class="tableRow">
 			<p>Nome:</p>
-			<p><input type="text" name="nome" value="" required></p>
+			<p><input type="text" name="nome" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Descrizione:</p>
-			<p><input type="text" name="descrizione" value="" required></p>
+			<p><input type="text" name="descrizione" pattern="[A-Za-z0-9]{1,50}" value="" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Iva:</p>
-			<p><input type="text" name="iva" value="" required></p>
+			<p><input type="text" name="iva" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Prezzo:</p>
-			<p><input type="text" name="prezzo" value="" required></p>
+			<p><input type="text" name="prezzo" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>		
 		<div class="tableRow">
 			<p>Data:</p>
-			<p><input type="text" name="dataUscita" value="" required></p>
+			<p><input type="text" name="dataUscita" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Quantità:</p>
@@ -48,19 +48,19 @@
 		</div>
 		<div class="tableRow">
 			<p>Immagine:</p>
-			<p><input type="text" name="img" value="" required></p>
+			<p><input type="text" name="img" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Piattaforma:</p>
-			<p><input type="text" name="piattaforma" value="" required></p>
+			<p><input type="text" name="piattaforma" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Genere:</p>
-			<p><input type="text" name="genere" value="" required></p>
+			<p><input type="text" name="genere" value="" pattern="[A-Za-z0-9]{1,50}" required></p>
 		</div>
 		<div class="tableRow">	
 			<p>Descrizione dettagliata:</p>
-			<p><input type="text" name="descDett" value=""></p>
+			<p><input type="text" name="descDett" pattern="[A-Za-z0-9]{1,50}" value=""></p>
 		</div>
 		<div class="tableRow">
 			<p></p>
