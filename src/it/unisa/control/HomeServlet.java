@@ -28,6 +28,10 @@ public class HomeServlet extends HttpServlet {
 		
 		ArrayList<ArrayList<ProdottoBean>> categorie = new ArrayList<>();
 		String redirectedPage = request.getParameter("page");
+		if (redirectedPage.equals("META-INF/context.xml") || redirectedPage.equals("WEB-INF/web.xml")) {
+	        response.sendRedirect(request.getContextPath() + "/Home.jsp");
+	        return;
+	    }
 		
 		try {
 			ArrayList<ProdottoBean> PS5 = dao.doRetrieveByPiattaforma("PlayStation 5");
@@ -56,6 +60,9 @@ public class HomeServlet extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String redirectedPage = request.getParameter("page");
+		
+		
 		
 		doGet(request, response);
 	}
