@@ -30,7 +30,7 @@
 			if (xboxSeries != null && xboxSeries.size() != 0) {
 				Iterator<?> it = xboxSeries.iterator();
 				while (it.hasNext()) {
-					ProdottoBean bean = (ProdottoBean) it.next();
+					ProdottoBean bean = (ProdottoBean) it.next(); 
 		%>
 		<div class="item">
 			<ul>
